@@ -28,10 +28,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		131B45093BDD7C89E048CB12 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		131B45093BDD7C89E048CB12 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		1548E373031CE589CC01FE89 /* Pods-RLNetworking_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RLNetworking_Example.debug.xcconfig"; path = "Target Support Files/Pods-RLNetworking_Example/Pods-RLNetworking_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		162A33A7D5716FE1FD082453 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		25D0F964046FBB10EE0559ED /* RLNetworking.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = RLNetworking.podspec; path = ../RLNetworking.podspec; sourceTree = "<group>"; };
+		162A33A7D5716FE1FD082453 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		25D0F964046FBB10EE0559ED /* RLNetworking.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = RLNetworking.podspec; path = ../RLNetworking.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		480A20762D297D6FC59E11A4 /* Pods_RLNetworking_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RLNetworking_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5437C510A005C3F93D98C401 /* Pods-RLNetworking_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RLNetworking_Tests.release.xcconfig"; path = "Target Support Files/Pods-RLNetworking_Tests/Pods-RLNetworking_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* RLNetworking_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RLNetworking_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -147,7 +147,6 @@
 				6C426DA370B77992AC585025 /* Pods-RLNetworking_Tests.debug.xcconfig */,
 				5437C510A005C3F93D98C401 /* Pods-RLNetworking_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -227,6 +226,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);

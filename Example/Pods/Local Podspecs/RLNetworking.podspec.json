@@ -1,0 +1,22 @@
+{
+  "name": "RLNetworking",
+  "version": "0.1.0",
+  "summary": "A short description of RLNetworking.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Sovannra/RLNetworking",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Sovannra": "sovannrakong@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/Sovannra/RLNetworking.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "RLNetworking/Classes/**/*"
+}

@@ -1,0 +1,6 @@
+framework module RLNetworking {
+  umbrella header "RLNetworking-umbrella.h"
+
+  export *
+  module * { export * }
+}

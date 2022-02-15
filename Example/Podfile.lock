@@ -1,0 +1,16 @@
+PODS:
+  - RLNetworking (0.1.0)
+
+DEPENDENCIES:
+  - RLNetworking (from `../`)
+
+EXTERNAL SOURCES:
+  RLNetworking:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  RLNetworking: 0c800fc8c39f02ca4c602c21735c2c3593539a15
+
+PODFILE CHECKSUM: 508f58a263db5aceca9271a9fc920fe4609d942b
+
+COCOAPODS: 1.11.2
