@@ -83,7 +83,7 @@
 		14DD1F404626D610957D1ACA8C6A374B /* RLNetworking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RLNetworking.debug.xcconfig; sourceTree = "<group>"; };
 		16FE7CFEDDFDABCF33733A2AE1912573 /* Pods-RLNetworking_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RLNetworking_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		24CDE94C153730097D1428382BDFD47D /* Pods-RLNetworking_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RLNetworking_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		28499419F31CB50C1341A7145EC48521 /* RLNetworking.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = RLNetworking.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		28499419F31CB50C1341A7145EC48521 /* BJNetworking.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = BJNetworking.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		2BE2086AF6E43C567F3FBCF7974ED114 /* Pods-RLNetworking_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RLNetworking_Example-Info.plist"; sourceTree = "<group>"; };
 		3B787085D9659ABD3269BDD9B4A85F7F /* Pods-RLNetworking_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-RLNetworking_Tests"; path = Pods_RLNetworking_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E73AE5F7813F8BEDCEF42A328DCD4EB /* Pods-RLNetworking_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RLNetworking_Example-umbrella.h"; sourceTree = "<group>"; };
@@ -276,7 +276,7 @@
 			children = (
 				FFAFC72C0AEEEA7C6886B63DBE97424D /* LICENSE */,
 				7630199596A3029151234095CD56A93E /* README.md */,
-				28499419F31CB50C1341A7145EC48521 /* RLNetworking.podspec */,
+				28499419F31CB50C1341A7145EC48521 /* BJNetworking.podspec */,
 			);
 			name = Pod;
 			sourceTree = "<group>";
