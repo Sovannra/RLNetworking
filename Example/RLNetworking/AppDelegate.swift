@@ -7,15 +7,19 @@
 //
 
 import UIKit
+import RLNetworking
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        let config = RLNetworkConfig()
+        config.baseUrl = "Base Url"
+        config.accessToken = "Access Token"
+        RLNetworkConstant.config(config)
         return true
     }
 

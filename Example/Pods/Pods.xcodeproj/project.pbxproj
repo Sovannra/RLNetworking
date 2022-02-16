@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04D7125027BC932600C90011 /* RLNetworkingConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D7124F27BC932600C90011 /* RLNetworkingConfig.swift */; };
+		04D7125127BC990A00C90011 /* TargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0402948A27BB5D7F00537506 /* TargetType.swift */; };
+		04D7125227BC993400C90011 /* URLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0402948B27BB5D7F00537506 /* URLSessionProtocol.swift */; };
+		04D7125327BC993900C90011 /* BaseApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040294A527BB5D7F00537506 /* BaseApiService.swift */; };
+		04D7125427BC993F00C90011 /* NetworkLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040294A627BB5D7F00537506 /* NetworkLogger.swift */; };
+		04D7125527BC994600C90011 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0402948827BB5D7F00537506 /* Task.swift */; };
+		04D7125627BC994900C90011 /* HTTPHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0402948727BB5D7F00537506 /* HTTPHeader.swift */; };
+		04D7125727BC994B00C90011 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0402948627BB5D7F00537506 /* HTTPMethod.swift */; };
+		04D7125827BC994F00C90011 /* NetworkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0402948527BB5D7F00537506 /* NetworkResponse.swift */; };
+		04D7125927BC995300C90011 /* ParamEcoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0402948127BB5D7F00537506 /* ParamEcoding.swift */; };
+		04D7125A27BC995500C90011 /* URLParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0402948227BB5D7F00537506 /* URLParameterEncoding.swift */; };
+		04D7125B27BC995900C90011 /* JsonParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0402948327BB5D7F00537506 /* JsonParameterEncoder.swift */; };
+		04D7125C27BC995E00C90011 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040294C227BB61A100537506 /* Reachability.swift */; };
+		04D7125D27BC996100C90011 /* Connectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040294C327BB61A100537506 /* Connectivity.swift */; };
 		2FFDE28FC3C371D0F9DCE4323CD94956 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		3BA036FB67C20CD14CA1821A6E172B5F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		3BFD5D02A54CB5D134577B07B9081D59 /* RLNetworking-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CBF55E6BA98B252EAC4ABADEC4D8E66 /* RLNetworking-dummy.m */; };
@@ -16,7 +30,6 @@
 		8ED830452281E3416E3664FD8ED62944 /* RLNetworking-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F087E1F76F44A4BCBCF8BA9AE9ED9EE3 /* RLNetworking-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A03596E01264850BAE6D2FB3B420E89F /* Pods-RLNetworking_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E73AE5F7813F8BEDCEF42A328DCD4EB /* Pods-RLNetworking_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EB0BFD97C878DE14DB7ADC1FABE208DB /* Pods-RLNetworking_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 974A98DBAEF3D9E1A906728CEE87D427 /* Pods-RLNetworking_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FE639BF79D7DF3B9E91EAB393830613C /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BD14400ED005334F6CBCE8D7B9DD1A /* ReplaceMe.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,19 +50,33 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0402948127BB5D7F00537506 /* ParamEcoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParamEcoding.swift; sourceTree = "<group>"; };
+		0402948227BB5D7F00537506 /* URLParameterEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLParameterEncoding.swift; sourceTree = "<group>"; };
+		0402948327BB5D7F00537506 /* JsonParameterEncoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonParameterEncoder.swift; sourceTree = "<group>"; };
+		0402948527BB5D7F00537506 /* NetworkResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkResponse.swift; sourceTree = "<group>"; };
+		0402948627BB5D7F00537506 /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		0402948727BB5D7F00537506 /* HTTPHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPHeader.swift; sourceTree = "<group>"; };
+		0402948827BB5D7F00537506 /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		0402948A27BB5D7F00537506 /* TargetType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TargetType.swift; sourceTree = "<group>"; };
+		0402948B27BB5D7F00537506 /* URLSessionProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSessionProtocol.swift; sourceTree = "<group>"; };
+		040294A527BB5D7F00537506 /* BaseApiService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseApiService.swift; sourceTree = "<group>"; };
+		040294A627BB5D7F00537506 /* NetworkLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkLogger.swift; sourceTree = "<group>"; };
+		040294C227BB61A100537506 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		040294C327BB61A100537506 /* Connectivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Connectivity.swift; sourceTree = "<group>"; };
+		04D7124F27BC932600C90011 /* RLNetworkingConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RLNetworkingConfig.swift; sourceTree = "<group>"; };
 		05E0EB37358E70B10C4D0A870706662E /* RLNetworking.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = RLNetworking.modulemap; sourceTree = "<group>"; };
 		1221A2193CC0541323B217965B34273B /* Pods-RLNetworking_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RLNetworking_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		14DD1F404626D610957D1ACA8C6A374B /* RLNetworking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RLNetworking.debug.xcconfig; sourceTree = "<group>"; };
 		16FE7CFEDDFDABCF33733A2AE1912573 /* Pods-RLNetworking_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RLNetworking_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		24CDE94C153730097D1428382BDFD47D /* Pods-RLNetworking_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RLNetworking_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		28499419F31CB50C1341A7145EC48521 /* RLNetworking.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = RLNetworking.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		28499419F31CB50C1341A7145EC48521 /* RLNetworking.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = RLNetworking.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		2BE2086AF6E43C567F3FBCF7974ED114 /* Pods-RLNetworking_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RLNetworking_Example-Info.plist"; sourceTree = "<group>"; };
 		3B787085D9659ABD3269BDD9B4A85F7F /* Pods-RLNetworking_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-RLNetworking_Tests"; path = Pods_RLNetworking_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E73AE5F7813F8BEDCEF42A328DCD4EB /* Pods-RLNetworking_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RLNetworking_Example-umbrella.h"; sourceTree = "<group>"; };
 		5EDF2F693BD9C3957D46DE14D76412DF /* Pods-RLNetworking_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RLNetworking_Tests-dummy.m"; sourceTree = "<group>"; };
 		6570CC1DC795553C262AD1DF2CD9FB19 /* Pods-RLNetworking_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RLNetworking_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		7630199596A3029151234095CD56A93E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		7630199596A3029151234095CD56A93E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		7BA99B1CA85F9A660C4C92AA8D0FDEA4 /* Pods-RLNetworking_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RLNetworking_Tests-Info.plist"; sourceTree = "<group>"; };
 		8DA2AB93DD58B202165BB47CAD4B74B3 /* Pods-RLNetworking_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RLNetworking_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		974A98DBAEF3D9E1A906728CEE87D427 /* Pods-RLNetworking_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RLNetworking_Tests-umbrella.h"; sourceTree = "<group>"; };
@@ -57,19 +84,18 @@
 		9BE96311BCBEB011C0421C1CF58C4956 /* RLNetworking-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RLNetworking-prefix.pch"; sourceTree = "<group>"; };
 		9CBF55E6BA98B252EAC4ABADEC4D8E66 /* RLNetworking-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RLNetworking-dummy.m"; sourceTree = "<group>"; };
 		9D4B5543CC9ACA748236303D27F8D388 /* Pods-RLNetworking_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RLNetworking_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A1C6420B64A6684E58D6366C4987687E /* Pods-RLNetworking_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RLNetworking_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		B0CF07D03C629ED7E6C29053B91CF6FE /* Pods-RLNetworking_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RLNetworking_Example-dummy.m"; sourceTree = "<group>"; };
-		B573901D08C63294657BEF2DF26F0360 /* RLNetworking */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = RLNetworking; path = RLNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B573901D08C63294657BEF2DF26F0360 /* RLNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RLNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9D6769D52D1782ACFC946EB37BA19F6 /* Pods-RLNetworking_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-RLNetworking_Example"; path = Pods_RLNetworking_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE6D5827620D5FFBD39073B20542FED5 /* Pods-RLNetworking_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-RLNetworking_Tests.modulemap"; sourceTree = "<group>"; };
-		D8BD14400ED005334F6CBCE8D7B9DD1A /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = RLNetworking/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
 		DDDAEE4A28F86089CE0B56EAAB2BE280 /* Pods-RLNetworking_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RLNetworking_Example.release.xcconfig"; sourceTree = "<group>"; };
 		E2AD05F8B65DFAD5997BBEA40AEDE0D9 /* Pods-RLNetworking_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-RLNetworking_Example.modulemap"; sourceTree = "<group>"; };
 		ED21324AD3DDB13A9AB2413106DDEDC9 /* RLNetworking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RLNetworking.release.xcconfig; sourceTree = "<group>"; };
 		F087E1F76F44A4BCBCF8BA9AE9ED9EE3 /* RLNetworking-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RLNetworking-umbrella.h"; sourceTree = "<group>"; };
 		F40348C2A3B5BF752804793C752347EF /* RLNetworking-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "RLNetworking-Info.plist"; sourceTree = "<group>"; };
-		FFAFC72C0AEEEA7C6886B63DBE97424D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		FFAFC72C0AEEEA7C6886B63DBE97424D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +126,76 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0402947F27BB5D7F00537506 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				040294C127BB61A100537506 /* InternetConnection */,
+				0402948027BB5D7F00537506 /* Ecoding */,
+				0402948427BB5D7F00537506 /* Enum */,
+				0402948927BB5D7F00537506 /* Protocol */,
+				0402948E27BB5D7F00537506 /* Services */,
+			);
+			name = Networking;
+			path = RLNetworking/Classes/Networking;
+			sourceTree = "<group>";
+		};
+		0402948027BB5D7F00537506 /* Ecoding */ = {
+			isa = PBXGroup;
+			children = (
+				0402948127BB5D7F00537506 /* ParamEcoding.swift */,
+				0402948227BB5D7F00537506 /* URLParameterEncoding.swift */,
+				0402948327BB5D7F00537506 /* JsonParameterEncoder.swift */,
+			);
+			path = Ecoding;
+			sourceTree = "<group>";
+		};
+		0402948427BB5D7F00537506 /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				0402948527BB5D7F00537506 /* NetworkResponse.swift */,
+				0402948627BB5D7F00537506 /* HTTPMethod.swift */,
+				0402948727BB5D7F00537506 /* HTTPHeader.swift */,
+				0402948827BB5D7F00537506 /* Task.swift */,
+			);
+			path = Enum;
+			sourceTree = "<group>";
+		};
+		0402948927BB5D7F00537506 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				0402948A27BB5D7F00537506 /* TargetType.swift */,
+				0402948B27BB5D7F00537506 /* URLSessionProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		0402948E27BB5D7F00537506 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				040294A427BB5D7F00537506 /* Base */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		040294A427BB5D7F00537506 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				040294A527BB5D7F00537506 /* BaseApiService.swift */,
+				040294A627BB5D7F00537506 /* NetworkLogger.swift */,
+				04D7124F27BC932600C90011 /* RLNetworkingConfig.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		040294C127BB61A100537506 /* InternetConnection */ = {
+			isa = PBXGroup;
+			children = (
+				040294C227BB61A100537506 /* Reachability.swift */,
+				040294C327BB61A100537506 /* Connectivity.swift */,
+			);
+			path = InternetConnection;
+			sourceTree = "<group>";
+		};
 		2227FFFA2B40FC16F2E931C8656E9B67 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -135,7 +231,7 @@
 		687A3C6411D9846BF67CB512BE580EA3 /* RLNetworking */ = {
 			isa = PBXGroup;
 			children = (
-				D8BD14400ED005334F6CBCE8D7B9DD1A /* ReplaceMe.swift */,
+				0402947F27BB5D7F00537506 /* Networking */,
 				A712A8A195244DABB30062BB2BCFF1E0 /* Pod */,
 				3C045009D3393C105C9C7F22265AC784 /* Support Files */,
 			);
@@ -156,7 +252,7 @@
 			children = (
 				C9D6769D52D1782ACFC946EB37BA19F6 /* Pods-RLNetworking_Example */,
 				3B787085D9659ABD3269BDD9B4A85F7F /* Pods-RLNetworking_Tests */,
-				B573901D08C63294657BEF2DF26F0360 /* RLNetworking */,
+				B573901D08C63294657BEF2DF26F0360 /* RLNetworking.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -268,7 +364,7 @@
 			);
 			name = RLNetworking;
 			productName = RLNetworking;
-			productReference = B573901D08C63294657BEF2DF26F0360 /* RLNetworking */;
+			productReference = B573901D08C63294657BEF2DF26F0360 /* RLNetworking.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		AA99F4EDAEB90106ED830A2EB1254F71 /* Pods-RLNetworking_Example */ = {
@@ -317,6 +413,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					0D6B2BAD380543FFB9C03CA1D4BDC242 = {
+						LastSwiftMigration = 1300;
+					};
+				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -383,8 +484,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE639BF79D7DF3B9E91EAB393830613C /* ReplaceMe.swift in Sources */,
+				04D7125C27BC995E00C90011 /* Reachability.swift in Sources */,
+				04D7125927BC995300C90011 /* ParamEcoding.swift in Sources */,
+				04D7125D27BC996100C90011 /* Connectivity.swift in Sources */,
+				04D7125427BC993F00C90011 /* NetworkLogger.swift in Sources */,
+				04D7125827BC994F00C90011 /* NetworkResponse.swift in Sources */,
+				04D7125327BC993900C90011 /* BaseApiService.swift in Sources */,
+				04D7125A27BC995500C90011 /* URLParameterEncoding.swift in Sources */,
+				04D7125227BC993400C90011 /* URLSessionProtocol.swift in Sources */,
+				04D7125127BC990A00C90011 /* TargetType.swift in Sources */,
+				04D7125627BC994900C90011 /* HTTPHeader.swift in Sources */,
+				04D7125B27BC995900C90011 /* JsonParameterEncoder.swift in Sources */,
+				04D7125727BC994B00C90011 /* HTTPMethod.swift in Sources */,
 				3BFD5D02A54CB5D134577B07B9081D59 /* RLNetworking-dummy.m in Sources */,
+				04D7125527BC994600C90011 /* Task.swift in Sources */,
+				04D7125027BC932600C90011 /* RLNetworkingConfig.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,6 +557,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = ED21324AD3DDB13A9AB2413106DDEDC9 /* RLNetworking.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -605,6 +720,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 14DD1F404626D610957D1ACA8C6A374B /* RLNetworking.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -624,6 +740,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -686,8 +803,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
