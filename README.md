@@ -145,11 +145,11 @@ class AuthenticateService: BaseApiService<AuthenticateResource> {
 
 ```swift
 
-        AuthenticateService.shared.loginWithEmail(email: "email", password: "******") { res in
-            DispatchQueue.main.async {
-                RLNetworkConstant.token = res.data.accessToken ?? ""
-            }
-        } failure: { err in }
+   AuthenticateService.shared.loginWithEmail(email: "email", password: "******") { res in
+       DispatchQueue.main.async {
+          RLNetworkConstant.token = res.data.accessToken ?? ""
+       }
+   } failure: { err in }
         
 ```
 
