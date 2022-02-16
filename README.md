@@ -79,10 +79,6 @@ enum AuthenticateResource {
 
 extension AuthenticateResource: TargetType {
     
-    var baseUrl: URL {
-        return URL(string: "\(Environment.BASE_URL)")!
-    }
-    
     var path: String {
         switch self {
         case .loginWithEmail:
