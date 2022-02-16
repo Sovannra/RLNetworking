@@ -29,6 +29,8 @@ pod 'RLNetworking'
 ## Getting Started
 #### Initialization and presentation
 
+* To set / get the Networking configuration
+
 ```swift
 
 public struct RLNetworkConstant {
@@ -50,6 +52,8 @@ public struct RLNetworkConstant {
 }
 
 ```
+* Setup Networking configuration in AppDelegate
+
 ```swift
 
 import RLNetworking
@@ -63,6 +67,8 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 }
     
 ```
+* How to implement Networking with TargetType
+
 ```swift
 
 import RLNetworking
@@ -109,6 +115,8 @@ extension AuthenticateResource: TargetType {
 }
 
 ```
+* How to implement service with BaseApiService
+
 ```swift
 
 import RLNetworking
