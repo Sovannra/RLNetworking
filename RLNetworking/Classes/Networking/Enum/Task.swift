@@ -17,7 +17,7 @@ import Foundation
 ///
 /// **********************
 
-enum Task {
+public enum Task {
     case requestPlain
     
     case requestParameters(bodyParameters: Parameters?,

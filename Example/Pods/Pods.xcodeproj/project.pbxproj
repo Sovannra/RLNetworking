@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		04D7125027BC932600C90011 /* RLNetworkingConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D7124F27BC932600C90011 /* RLNetworkingConfig.swift */; };
-		04D7125127BC990A00C90011 /* TargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0402948A27BB5D7F00537506 /* TargetType.swift */; };
 		04D7125227BC993400C90011 /* URLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0402948B27BB5D7F00537506 /* URLSessionProtocol.swift */; };
 		04D7125327BC993900C90011 /* BaseApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040294A527BB5D7F00537506 /* BaseApiService.swift */; };
 		04D7125427BC993F00C90011 /* NetworkLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040294A627BB5D7F00537506 /* NetworkLogger.swift */; };
@@ -21,6 +20,21 @@
 		04D7125B27BC995900C90011 /* JsonParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0402948327BB5D7F00537506 /* JsonParameterEncoder.swift */; };
 		04D7125C27BC995E00C90011 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040294C227BB61A100537506 /* Reachability.swift */; };
 		04D7125D27BC996100C90011 /* Connectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040294C327BB61A100537506 /* Connectivity.swift */; };
+		04D7127127BCA3AC00C90011 /* TargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D7127027BCA3AC00C90011 /* TargetType.swift */; };
+		04D7127227BCA58E00C90011 /* BaseApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040294A527BB5D7F00537506 /* BaseApiService.swift */; };
+		04D7127327BCA59600C90011 /* URLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0402948B27BB5D7F00537506 /* URLSessionProtocol.swift */; };
+		04D7127427BCA59900C90011 /* TargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D7127027BCA3AC00C90011 /* TargetType.swift */; };
+		04D7127527BCA59E00C90011 /* NetworkLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040294A627BB5D7F00537506 /* NetworkLogger.swift */; };
+		04D7127627BCA5A100C90011 /* RLNetworkingConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D7124F27BC932600C90011 /* RLNetworkingConfig.swift */; };
+		04D7127727BCA5A600C90011 /* NetworkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0402948527BB5D7F00537506 /* NetworkResponse.swift */; };
+		04D7127827BCA5A800C90011 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0402948627BB5D7F00537506 /* HTTPMethod.swift */; };
+		04D7127927BCA5AD00C90011 /* HTTPHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0402948727BB5D7F00537506 /* HTTPHeader.swift */; };
+		04D7127A27BCA5AF00C90011 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0402948827BB5D7F00537506 /* Task.swift */; };
+		04D7127B27BCA5B200C90011 /* ParamEcoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0402948127BB5D7F00537506 /* ParamEcoding.swift */; };
+		04D7127C27BCA5B500C90011 /* URLParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0402948227BB5D7F00537506 /* URLParameterEncoding.swift */; };
+		04D7127D27BCA5B700C90011 /* JsonParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0402948327BB5D7F00537506 /* JsonParameterEncoder.swift */; };
+		04D7127E27BCA60200C90011 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040294C227BB61A100537506 /* Reachability.swift */; };
+		04D7127F27BCA60600C90011 /* Connectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040294C327BB61A100537506 /* Connectivity.swift */; };
 		2FFDE28FC3C371D0F9DCE4323CD94956 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		3BA036FB67C20CD14CA1821A6E172B5F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		3BFD5D02A54CB5D134577B07B9081D59 /* RLNetworking-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CBF55E6BA98B252EAC4ABADEC4D8E66 /* RLNetworking-dummy.m */; };
@@ -57,13 +71,13 @@
 		0402948627BB5D7F00537506 /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 		0402948727BB5D7F00537506 /* HTTPHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPHeader.swift; sourceTree = "<group>"; };
 		0402948827BB5D7F00537506 /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
-		0402948A27BB5D7F00537506 /* TargetType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TargetType.swift; sourceTree = "<group>"; };
 		0402948B27BB5D7F00537506 /* URLSessionProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSessionProtocol.swift; sourceTree = "<group>"; };
 		040294A527BB5D7F00537506 /* BaseApiService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseApiService.swift; sourceTree = "<group>"; };
 		040294A627BB5D7F00537506 /* NetworkLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkLogger.swift; sourceTree = "<group>"; };
 		040294C227BB61A100537506 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		040294C327BB61A100537506 /* Connectivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Connectivity.swift; sourceTree = "<group>"; };
 		04D7124F27BC932600C90011 /* RLNetworkingConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RLNetworkingConfig.swift; sourceTree = "<group>"; };
+		04D7127027BCA3AC00C90011 /* TargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetType.swift; sourceTree = "<group>"; };
 		05E0EB37358E70B10C4D0A870706662E /* RLNetworking.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = RLNetworking.modulemap; sourceTree = "<group>"; };
 		1221A2193CC0541323B217965B34273B /* Pods-RLNetworking_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RLNetworking_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		14DD1F404626D610957D1ACA8C6A374B /* RLNetworking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RLNetworking.debug.xcconfig; sourceTree = "<group>"; };
@@ -163,8 +177,8 @@
 		0402948927BB5D7F00537506 /* Protocol */ = {
 			isa = PBXGroup;
 			children = (
-				0402948A27BB5D7F00537506 /* TargetType.swift */,
 				0402948B27BB5D7F00537506 /* URLSessionProtocol.swift */,
+				04D7127027BCA3AC00C90011 /* TargetType.swift */,
 			);
 			path = Protocol;
 			sourceTree = "<group>";
@@ -476,7 +490,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04D7127E27BCA60200C90011 /* Reachability.swift in Sources */,
+				04D7127B27BCA5B200C90011 /* ParamEcoding.swift in Sources */,
+				04D7127F27BCA60600C90011 /* Connectivity.swift in Sources */,
+				04D7127927BCA5AD00C90011 /* HTTPHeader.swift in Sources */,
+				04D7127527BCA59E00C90011 /* NetworkLogger.swift in Sources */,
+				04D7127A27BCA5AF00C90011 /* Task.swift in Sources */,
+				04D7127C27BCA5B500C90011 /* URLParameterEncoding.swift in Sources */,
+				04D7127427BCA59900C90011 /* TargetType.swift in Sources */,
+				04D7127727BCA5A600C90011 /* NetworkResponse.swift in Sources */,
+				04D7127327BCA59600C90011 /* URLSessionProtocol.swift in Sources */,
+				04D7127D27BCA5B700C90011 /* JsonParameterEncoder.swift in Sources */,
+				04D7127827BCA5A800C90011 /* HTTPMethod.swift in Sources */,
 				637EB63BD98644FC9E0D3286411264C4 /* Pods-RLNetworking_Example-dummy.m in Sources */,
+				04D7127227BCA58E00C90011 /* BaseApiService.swift in Sources */,
+				04D7127627BCA5A100C90011 /* RLNetworkingConfig.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -484,6 +512,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04D7127127BCA3AC00C90011 /* TargetType.swift in Sources */,
 				04D7125C27BC995E00C90011 /* Reachability.swift in Sources */,
 				04D7125927BC995300C90011 /* ParamEcoding.swift in Sources */,
 				04D7125D27BC996100C90011 /* Connectivity.swift in Sources */,
@@ -492,7 +521,6 @@
 				04D7125327BC993900C90011 /* BaseApiService.swift in Sources */,
 				04D7125A27BC995500C90011 /* URLParameterEncoding.swift in Sources */,
 				04D7125227BC993400C90011 /* URLSessionProtocol.swift in Sources */,
-				04D7125127BC990A00C90011 /* TargetType.swift in Sources */,
 				04D7125627BC994900C90011 /* HTTPHeader.swift in Sources */,
 				04D7125B27BC995900C90011 /* JsonParameterEncoder.swift in Sources */,
 				04D7125727BC994B00C90011 /* HTTPMethod.swift in Sources */,

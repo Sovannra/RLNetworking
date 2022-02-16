@@ -9,7 +9,7 @@
 import Foundation
 
 /// Api Request Result
-enum NetworkResponse<T> {
+public enum NetworkResponse<T> {
     case success(T)
     case failure(Data?)
 }

@@ -15,17 +15,19 @@ protocol ApiService {
 /// All the api request services need to implement from BaseApiService
 /// <T>:  is a Provider Type or Resource Type
 
-class BaseApiService<T>: ApiService where T: TargetType {
+open class BaseApiService<T>: ApiService where T: TargetType {
     
     private var task: URLSessionTask?
     
-    typealias ProviderType = T
+    public typealias ProviderType = T
     
     private var session: URLSessionProtocol
-    init(session: URLSessionProtocol = URLSession.shared) {
+    
+    public init(session: URLSessionProtocol = URLSession.shared) {
         self.session = session
     }
-    func request<T>(service: ProviderType, model: T.Type, completion: @escaping (NetworkResponse<T>) -> ()) where T: Codable {
+    
+    open func request<T>(service: ProviderType, model: T.Type, completion: @escaping (NetworkResponse<T>) -> ()) where T: Codable {
         
         if !Connectivity.isConnectedToNetwork(){
             let mData = Data()
@@ -34,7 +36,10 @@ class BaseApiService<T>: ApiService where T: TargetType {
         }
         do {
             let request = try self.buildRequest(from: service)
-//            NetworkLogger.log(request: request)
+            
+            if RLNetworkConstant.enableLogger {
+                NetworkLogger.log(request: request)
+            }
             
             task = session.dataTask(request: request) { (data, response, error) in
                 
@@ -174,7 +179,7 @@ class BaseApiService<T>: ApiService where T: TargetType {
         print("codingPath: ", context.codingPath)
     }
     
-    func decode<T>(modelType: T.Type, data: Data?) -> T? where T : Decodable {
+    public func decode<T>(modelType: T.Type, data: Data?) -> T? where T : Decodable {
         do {
             let jsonError = try JSONDecoder().decode(modelType.self, from: data!)
             return jsonError

@@ -1,9 +1,8 @@
 //
 //  TargetType.swift
-//  ios-app-milio
+//  RLNetworking
 //
-//  Created by IG_Se7enzZ on 8/15/20.
-//  Copyright © 2020 Core-MVVM. All rights reserved.
+//  Created by Sovannra on 16/2/22.
 //
 
 import Foundation
@@ -12,10 +11,7 @@ import Foundation
 
 public typealias Headers = [String: String]
 
-public var BaseUrl: String = ""
-public var Token: String   = ""
-
-protocol TargetType {
+public protocol TargetType {
     
     /// The target's base `URL`.
     var baseUrl: URL { get }
@@ -36,7 +32,7 @@ protocol TargetType {
 //    var parametersEncoding: ParametersEncoding { get }
 }
 
-extension TargetType {
+public extension TargetType {
     
     var baseUrl: URL {
         return URL(string: RLNetworkConstant.baseUrl)!
@@ -52,11 +48,11 @@ extension TargetType {
         return [ HTTPHeader.contentType.rawValue: "application/json"]
     }
     
-    public func getHeader() -> [String: String] {
+    func getHeader() -> [String: String] {
         return Self.baseHeader
     }
     
-    public func noAuthorization() -> [String: String] {
+    func noAuthorization() -> [String: String] {
         return [HTTPHeader.contentType.rawValue: "application/json"]
     }
     

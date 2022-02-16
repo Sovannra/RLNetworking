@@ -16,10 +16,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        let config = RLNetworkConfig()
-        config.baseUrl = "Base Url"
-        config.accessToken = "Access Token"
-        RLNetworkConstant.config(config)
+        RLNetworkConstant.baseUrl = "\(Environment.BASE_URL)"
+        login()
+        
         return true
     }
 
@@ -45,6 +44,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
+}
 
+extension AppDelegate {
+    
+    func login() {
+        AuthenticateService.shared.loginWithEmail(email: "beejey227@gmail.com", password: "b33j3y@227") { res in
+            DispatchQueue.main.async {
+                RLNetworkConstant.token = res.data.accessToken ?? ""
+            }
+        } failure: { err in }
+    }
 }
 
