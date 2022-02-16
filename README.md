@@ -141,6 +141,17 @@ class AuthenticateService: BaseApiService<AuthenticateResource> {
 }
 
 ```
+* How to call api service 
+
+```swift
+
+        AuthenticateService.shared.loginWithEmail(email: "email", password: "******") { res in
+            DispatchQueue.main.async {
+                RLNetworkConstant.token = res.data.accessToken ?? ""
+            }
+        } failure: { err in }
+        
+```
 
 ## Author
 
